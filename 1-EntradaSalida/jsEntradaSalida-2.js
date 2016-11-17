@@ -1,22 +1,29 @@
 /*Debemos lograr tomar un nombre con 'prompt' 
 y luego mostrarlo por 'alert' al presionar el botón  'MOSTRAR'*/
-function Mostar(){
+function Mostar()
+{
 	var nombre;
 	var apellido;
 	nombre=prompt ("Ingrese su nombre");
 	apellido=prompt ("Ingrese su apellido");
-	if(nombre=="" && apellido=="") {
+	if(nombre=="" && apellido=="")
+	{
 		alert("Omite indicar su información personal");
 	}
-	else{
-		if(nombre=="") {
+	else
+	{
+		if(nombre=="")
+		{
 			alert("Omitió indicar su nombre");
 		}
-		else{
-			if (apellido=="") {
+		else
+		{
+			if (apellido=="")
+			{
 				alert("Omitió indicar su apellido");
 			}
-			else{
+			else
+			{
 				alert("Su nombre es: " + nombre + "\nY su apellido es: " + apellido);
 			}
 		}
