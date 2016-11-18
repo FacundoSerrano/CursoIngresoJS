@@ -2,13 +2,18 @@
 transformarlo a entero (parseInt), luego
 mostrar el importe con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
-function MostrarAumento(){
-	if(document.getElementById('sueldo').value=="") {
+function MostrarAumento()
+{
+	var sueldo;
+	var aumento;
+	if(document.getElementById('sueldo').value=="")
+	{
 		alert("Omitió ingresar el sueldo");
 	}
-	else{
-		var sueldo=parseInt(document.getElementById('sueldo').value);
-		var aumento=sueldo * 1.1;
+	else
+	{
+		sueldo=document.getElementById('sueldo').value;
+		aumento=sueldo * 1.1;
 		document.getElementById('resultado').value=Math.round(aumento);
 	}
 }

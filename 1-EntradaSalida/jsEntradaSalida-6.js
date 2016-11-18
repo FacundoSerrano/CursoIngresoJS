@@ -2,21 +2,29 @@
 transformarlos a enteros (parseInt) y Sumarlos.
 Mostar el resulto por medio de "ALERT"*/
 function sumar(){
+	var uno;
+	var dos;
+	var resultado
 	if(document.getElementById('numeroUno').value=="" && document.getElementById('numeroDos').value=="") {
 		alert("Omitió ingresar los números");
 	}
-	else{
-		if(document.getElementById('numeroUno').value=="") {
+	else
+	{
+		if(document.getElementById('numeroUno').value=="")
+		{
 			alert("Omitió ingresar el número Uno");
 		}
-		else{
-			if (document.getElementById('numeroDos').value=="") {
+		else
+		{
+			if (document.getElementById('numeroDos').value=="")
+			{
 				alert("Omitió ingresar el número Dos");
 			}
-			else{
-				var uno=parseInt(document.getElementById('numeroUno').value);
-				var dos=parseInt(document.getElementById('numeroDos').value);
-				var resultado=uno + dos;
+			else
+			{
+				uno=parseInt(document.getElementById('numeroUno').value);
+				dos=parseInt(document.getElementById('numeroDos').value);
+				resultado=uno + dos;
 				alert("El resultado es " + resultado);
 			}
 		}
