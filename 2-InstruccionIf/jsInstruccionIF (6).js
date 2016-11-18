@@ -1,18 +1,26 @@
-function Mostrar(){
-//tomo la edad  
-if (document.getElementById('edad').value=="") {
+function Mostrar()
+{
+//tomo la edad
+	var edad;  
+	if (document.getElementById('edad').value=="")
+	{
 		alert("Omitió ingresar su edad");
 	}
-	else {
-		var edad=parseInt(document.getElementById('edad').value);
-		if (edad>=18) {
+	else
+	{
+		edad=document.getElementById('edad').value;
+		if (edad>=18)
+		{
 			alert("Usted es mayor de edad");
 		}
-		else {
-			if (edad>=13 && edad<=17) {
+		else
+		{
+			if (edad>=13 && edad<=17)
+			{
 				alert("Usted es adolescente");
 			}
-			else {
+			else
+			{
 				alert("Usted es un niño");
 
 			}
