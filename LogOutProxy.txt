@@ -1,1 +1,1 @@
-https://vip-proxy-cli-ka.mecon.ar/?evento=logout
+vip-proxy-cli-ka.mecon.ar/?event=logout
