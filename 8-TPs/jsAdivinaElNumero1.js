@@ -12,15 +12,39 @@ var contadorIntentos;
 
 function comenzar()
 {
+	numeroSecreto = Math.floor((Math.random() * 100) + 1);
+	contadorIntentos = 0;
+	alert("El juego ha comenzado");
 	//Genero el número RANDOM entre 1 y 100
 	 
 		//alert(numeroSecreto );
-	
-
 }
 
 function verificar()
 {
-	
-	
+	var numero;
+
+	contadorIntentos = contadorIntentos + 1;
+	numero = document.getElementById('numero').value;
+
+	if (numeroSecreto == null)
+	{
+		alert("Olvidó comenzar el juego");
+	}
+	else if (numero == "")
+	{
+		alert("Olvidó ingresar un número");
+	}
+	else if (numero == numeroSecreto)
+	{
+		alert("Usted es un ganador!" + "\nY en solo " + contadorIntentos + " intentos");
+	}
+	else if (numero > numeroSecreto)
+	{
+		alert("Se pasó...");
+	}
+	else
+	{
+		alert("Falta...");
+	}
 }
