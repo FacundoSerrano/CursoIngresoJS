@@ -2,43 +2,31 @@ function Mostrar()
 {
 //tomo la edad  
 	var mes;
-	mes=document.getElementById('mes').value;
-	switch mes(0;11);
+	mes = document.getElementById('mes').value;
+	switch (mes)
 	{
-    case 0:
-        mes="Enero";
-        text
+    case "Enero":
+        alert("Que comiences bien el año!");
         break;
-    case 1:
-        mes="Febrero";
+    case "Marzo":
+        alert("A clases!");
         break;
-    case 2:
-        mes="Marzo";
+    case "Julio":
+        alert("Se vienen las vacaciones!");
         break;
-    case 3:
-        mes="Abril";
+    case "Diciembre":
+        alert("Felices fiestas!");
         break;
-    case 4:
-        mes="Mayo";
+    case "Febrero":
+    case "Abril":
+    case "Mayo":
+    case "Junio":
+    case "Agosto":
+    case "Septiembre":
+    case "Octubre":
+    case "Noviembre":
+        alert("Es un año duro...");
         break;
-    case 5:
-        mes="Junio";
-        break;
-    case 6:
-        mes="Julio";
-    case 7:
-        mes="Agosto";
-        break;
-    case 8:
-        mes="Septiembre";
-    case 9:
-        mes="Octubre";
-        break;
-    case 10:
-        mes="Noviembre";
-    case 11:
-        mes="Diciembre";
-        break;
-	}
+    }
 }
 //FIN DE LA FUNCIÓN
