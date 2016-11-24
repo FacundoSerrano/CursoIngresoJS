@@ -15,14 +15,60 @@ var contadorIntentos;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	 
-	
-
+	numeroSecreto = Math.floor((Math.random() * 100) + 1);
+	contadorIntentos = 0;
+	alert("El juego ha comenzado"); 
 }
 
 function verificar()
 {
-	
-	
+	var numero;
 
+	contadorIntentos ++;
+	numero = document.getElementById('numero').value;
+
+	if (numeroSecreto == null)
+	{
+		alert("Olvidó comenzar el juego");
+	}
+	else if (numero == "")
+	{
+		alert("Olvidó ingresar un número");
+	}
+	else if (numero == numeroSecreto && contadorIntentos == 1)
+	{
+		alert("Usted es un psíquico!" + "\nLo consiguió en " + contadorIntentos + " intentos");
+	}
+	else if (numero == numeroSecreto && contadorIntentos == 2)
+	{
+		alert("Excelente percepción!" + "\nLo consiguió en " + contadorIntentos + " intentos");
+	}
+	else if (numero == numeroSecreto && contadorIntentos == 3)
+	{
+		alert("Esto es suerte!" + "\nLo consiguió en " + contadorIntentos + " intentos");
+	}
+	else if (numero == numeroSecreto && contadorIntentos == 4)
+	{
+		alert("Excelente técnica!" + "\nLo consiguió en " + contadorIntentos + " intentos");
+	}
+	else if (numero == numeroSecreto && contadorIntentos == 5)
+	{
+		alert("Usted está en la media!" + "\nLo consiguió en " + contadorIntentos + " intentos");
+	}
+	else if (numero == numeroSecreto && (contadorIntentos >= 6 && contadorIntentos <= 10))
+	{
+		alert("Falta técnica!" + "\nLo consiguió en " + contadorIntentos + " intentos");
+	}
+	else if (numero == numeroSecreto && contadorIntentos > 10)
+	{
+		alert("Afortunado en el amor!" + "\nLo consiguió en " + contadorIntentos + " intentos");
+	}
+	else if (numero > numeroSecreto)
+	{
+		alert("Se pasó...");
+	}
+	else
+	{
+		alert("Falta...");
+	}	
 }

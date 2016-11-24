@@ -24,7 +24,7 @@ function verificar()
 {
 	var numero;
 
-	contadorIntentos = contadorIntentos + 1;
+	contadorIntentos ++;
 	numero = document.getElementById('numero').value;
 
 	if (numeroSecreto == null)
