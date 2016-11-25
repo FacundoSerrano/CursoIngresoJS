@@ -94,7 +94,7 @@ function tijera()
 
 function mostarResultado()
 {
-	document.getElementById('ganadas').value = contadorDeGanadas;
-	document.getElementById('perdidas').value = contadorDePerdidas;
-	document.getElementById('empatadas').value = contadorDeEmpates;
+	document.getElementById('ganadas').value = "Ganó " + contadorDeGanadas + " veces";
+	document.getElementById('perdidas').value = "Perdió " + contadorDePerdidas + " veces";
+	document.getElementById('empatadas').value = "Empató " + contadorDeEmpates + " veces";
 }
