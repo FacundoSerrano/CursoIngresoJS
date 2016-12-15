@@ -1,6 +1,13 @@
 function Mostrar()
 {
-	alert('iteración while');
+	var numero;
 
+	numero = 0;
 
-}//FIN DE LA FUNCIÓN
+	while (numero < 10)
+	{
+		numero ++;
+		console.log(numero);
+	}
+}
+//FIN DE LA FUNCIÓN
