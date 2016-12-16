@@ -1,6 +1,6 @@
 function Mostrar()
 {
-	var numero
+	var numero;
 
 	numero = prompt("Ingrese un número entre 0 y 10");
 

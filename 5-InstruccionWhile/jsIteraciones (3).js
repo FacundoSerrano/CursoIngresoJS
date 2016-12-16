@@ -1,6 +1,6 @@
 function Mostrar()
 {
-	var clave
+	var clave;
 
 	clave = prompt ("Ingrese la clave");
 
