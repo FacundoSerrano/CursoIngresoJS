@@ -10,5 +10,6 @@ function Mostrar()
 		sexo = prompt("Ingrese F ó M");
 	}
 
-	alert ("Sexo " + sexo);
-}//FIN DE LA FUNCIÓN
+	document.getElementById('Sexo').value = "Sexo " + sexo;
+}
+//FIN DE LA FUNCIÓN
